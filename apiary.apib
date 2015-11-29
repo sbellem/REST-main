@@ -1197,9 +1197,9 @@ recorded on the blockchain.
 + Request (application/json)
 
     + Attributes
-	    + share_emails (required, string) one or more emails
-	    + piece_id (required) ID of the piece
-	    + share_message (string) message
+	    + share_emails (required, string) - one or more emails
+	    + piece_id (required, integer) - ID of the piece
+	    + share_message (string) - optional message to recipients
 
     + Header
 
@@ -1210,7 +1210,7 @@ recorded on the blockchain.
             {
 		"share_emails": "alice@wonder.lnd,bob@wonder.lnd",
 		"share_message": "Check this out! - eve",
-		"piece_id": 3,
+		"piece_id": 3
             }
 
 + Response 200 (application/json)
